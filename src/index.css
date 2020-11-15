@@ -1,3 +1,6 @@
+html{
+  font-size:16px;
+}
 body {
   margin: 0;
   padding:0;
@@ -7,9 +10,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.4;
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Noto Sans HK', sans-serif;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+h2{
+  margin:0;
+  font-family: 'Noto Sans HK', sans-serif;
+  font-size:2rem;
+
+}
+h1{
+  margin:0;
+  font-family: 'Noto Sans HK', sans-serif; 
+  font-size:rem;
 }

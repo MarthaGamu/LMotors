@@ -1,21 +1,26 @@
 import './App.css';
-import Brands from './Components/Brands';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import About from './Pages/About';
+import Service from './Pages/Service';
+import Contact from './Pages/Contact';
 import Footer from './Components/Footer';
-import HeroBanner from './Components/HeroBanner';
 import Navbar from './Components/Navbar';
-import Services from './Components/Services';
-import Welcome from './Components/Welcome';
+import Home from './Pages/Home';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <HeroBanner />
-      <Welcome />
-      <Services />
-      <Brands />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/service" component={Service} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
