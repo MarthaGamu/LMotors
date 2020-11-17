@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const FooterStyled = styled.div`
   width: 100vw;
-  height: 20rem;
+  height: 22rem;
   background: #155c9a;
   color: white;
   text-align: center;
@@ -26,6 +26,9 @@ const FooterStyled = styled.div`
       }
     }
   }
+  .copy {
+    padding-top: 2rem;
+  }
 `;
 
 function Footer() {
@@ -40,7 +43,7 @@ function Footer() {
             United Kingdom
           </p>
           <p>
-            <strong>Call:</strong>+2637751099803
+            <strong>Call:</strong> +2637751099803
           </p>
         </div>
         <div className="opening">
@@ -48,7 +51,10 @@ function Footer() {
           <p>Monday-Saturday</p>
           <span>09:00am-5:00PM</span>
           <p>
-            Sunday - <span className="closed">closed</span>
+            Sunday -{' '}
+            <span className="closed">
+              <strong>closed</strong>
+            </span>
           </p>
         </div>
         <div className="social">
@@ -61,7 +67,9 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="copy">Copyright</div>
+      <div className="copy">
+        <p> &#169; 2020 LMOTORS Automotive.All Rights Reserved</p>
+      </div>
     </FooterStyled>
   );
 }

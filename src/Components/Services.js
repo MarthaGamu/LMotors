@@ -35,6 +35,16 @@ const ServiceStyled = styled.div`
       flex: 2;
       display: flex;
       justify-content: center;
+      .innercar {
+        width: 800px;
+        height: 500px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
     }
   }
   .explanation {
@@ -63,7 +73,9 @@ function Services() {
             </div>
           </div>
           <div className="car">
-            <img src={bmw} alt="car" />
+            <div className="innercar">
+              <img src={bmw} alt="car" />
+            </div>
           </div>
         </div>
         <div className="explanation">
