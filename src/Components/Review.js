@@ -8,6 +8,7 @@ const StyledReview = styled.div`
   p {
     margin: 0;
     padding: 0;
+    color: #122e47;
   }
   .container {
     width: 80vw;
@@ -19,7 +20,7 @@ const StyledReview = styled.div`
       color: #122e47;
     }
     .flexWrapper {
-      width: 80vw;
+      width: 90vw;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;

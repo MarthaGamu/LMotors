@@ -12,7 +12,6 @@ const FooterStyled = styled.div`
     height: 12rem;
     margin: auto;
     padding: 2rem;
-
     display: flex;
 
     .visit,
@@ -28,6 +27,14 @@ const FooterStyled = styled.div`
   }
   .copy {
     padding-top: 2rem;
+  }
+  @media (max-width: 600px) {
+    height: 36rem;
+
+    .container {
+      height: 24rem;
+      flex-direction: column;
+    }
   }
 `;
 

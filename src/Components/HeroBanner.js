@@ -47,6 +47,10 @@ const HeroStyling = styled.div`
     color: white;
     display: flex;
 
+    @media (max-width: 700px) {
+      display: none;
+    }
+
     .innerContent {
       padding: 3rem;
       text-align: center;

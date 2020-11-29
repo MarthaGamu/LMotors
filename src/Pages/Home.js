@@ -1,7 +1,7 @@
 import React from 'react';
 import HeroBanner from '../Components/HeroBanner';
 import Welcome from '../Components/Welcome';
-import Services from '../Components/Services';
+import ServiceCard from '../Components/ServiceCard';
 import Review from '../Components/Review';
 
 function Home() {
@@ -9,8 +9,7 @@ function Home() {
     <div>
       <HeroBanner />
       <Welcome />
-      <Services />
-      <Review />
+      <ServiceCard />
     </div>
   );
 }

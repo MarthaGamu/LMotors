@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { services } from '../data/Services';
 const ServiceStyled = styled.div`
   width: 100vw;
-  height: 60rem;
+  height: 65rem;
   color: #122e47;
   font-weight: 600;
 

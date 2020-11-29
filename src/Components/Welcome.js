@@ -15,6 +15,7 @@ const WelcomeStyled = styled.div`
     width: 60vw;
     margin: auto;
     line-height: 1.6;
+
     .line {
       width: 100%;
       height: 0.1rem;
@@ -23,6 +24,18 @@ const WelcomeStyled = styled.div`
     }
     h3 {
       color: #727272;
+    }
+  }
+  @media (max-width: 700px) {
+    height: 50rem;
+    h2 {
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+    .content {
+      width: 95vw;
     }
   }
 `;
