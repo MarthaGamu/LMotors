@@ -14,6 +14,7 @@ const StyledGallery = styled.div`
 
   h1 {
     padding-top: 3rem;
+    padding-bottom: 2rem;
     color: #122e47;
     font-size: 2.5rem;
   }
@@ -39,7 +40,7 @@ const StyledGallery = styled.div`
     }
   }
   @media (max-width: 1024px) {
-    height: 80rem;
+    height: 95rem;
   }
 `;
 function Gallery() {

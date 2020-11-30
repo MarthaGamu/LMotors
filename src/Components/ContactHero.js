@@ -88,7 +88,7 @@ function ContactHero() {
               <h5 className="title">SPEAK TO A TECHINICIAN NOW</h5>
               <p className="phone">
                 <span>
-                  <i class="fas fa fa-phone"></i> +447751099803
+                  <i className="fas fa fa-phone"></i> +447751099803
                 </span>
               </p>
               <p className="time">8am-5:30pm Mon-Fri</p>

@@ -67,10 +67,10 @@ function Footer() {
         <div className="social">
           <h3>SOCIAL MEDIA</h3>
           <div>
-            <i class="fab fa fa-facebook-square"></i>
-            <i class="fab fa fa-linkedin"></i>
-            <i class="fab fa fa-twitter-square"></i>
-            <i class="fas fa fa-envelope"></i>
+            <i className="fab fa fa-facebook-square"></i>
+            <i className="fab fa fa-linkedin"></i>
+            <i className="fab fa fa-twitter-square"></i>
+            <i className="fas fa fa-envelope"></i>
           </div>
         </div>
       </div>

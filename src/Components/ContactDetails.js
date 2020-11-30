@@ -22,6 +22,15 @@ const StyledDetails = styled.div`
   }
   @media (max-width: 770px) {
     height: 40rem;
+
+    .container {
+      h2 {
+        font-size: 1.5rem;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
   }
 `;
 

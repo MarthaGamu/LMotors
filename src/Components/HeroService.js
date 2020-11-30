@@ -26,6 +26,11 @@ const HeroStyled = styled.div`
       object-fit: cover;
     }
   }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
 `;
 
 function HeroService() {

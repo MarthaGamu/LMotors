@@ -67,21 +67,52 @@ const StyledForm = styled.div`
 `;
 
 class Contactform extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      firstname: '',
+      lastname: '',
+      email: '',
+      phone: '',
+      model: '',
+      subject: '',
+      message: '',
+      company: '',
+    };
+  }
+
+  handleChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value,
+    });
+  };
+  handleSubmit = (e) => {
+    e.prevenDefault();
+    console.log('enquiry has been send');
+  };
   render() {
     return (
       <StyledForm>
         <div className="container">
           <div className="form-container">
-            <form>
+            <form onSubmit={this.handleSubmit}>
               <div className="details">
                 <label>First Name*</label>
                 <br />
-                <input type="text" name="firstname" />
+                <input
+                  type="text"
+                  name="firstname"
+                  onChange={this.handleChange}
+                />
               </div>
               <div className="details">
                 <label>Last Name*</label>
                 <br />
-                <input type="text" name="lastname" />
+                <input
+                  type="text"
+                  name="lastname"
+                  onChange={this.handleChange}
+                />
               </div>
               <div className="details">
                 <label>Email*</label>
@@ -90,6 +121,7 @@ class Contactform extends Component {
                   type="email"
                   name="email"
                   placeholder="name@example.com"
+                  onChange={this.handleChange}
                 />
               </div>
               <div className="details">
@@ -99,23 +131,32 @@ class Contactform extends Component {
                   type="number"
                   name="phone"
                   placeholder="Mobile/Landline"
+                  onChange={this.handleChange}
                 />
               </div>
               <div className="details">
                 <label>Vehicle Model*</label>
                 <br />
-                <input type="text" name="model" />
+                <input type="text" name="model" onChange={this.handleChange} />
               </div>
               <div className="details">
                 <label>Subject*</label>
                 <br />
 
-                <input type="text" name="subject" />
+                <input
+                  type="text"
+                  name="subject"
+                  onChange={this.handleChange}
+                />
               </div>
 
               <div className="details">
                 <label>Message*</label> <br />
-                <textarea placeholder="I am contacting you because..."></textarea>
+                <textarea
+                  placeholder="I am contacting you because..."
+                  name="message"
+                  onChange={this.handleChange}
+                ></textarea>
               </div>
               <div className="details">
                 <label>Company</label>
@@ -125,6 +166,7 @@ class Contactform extends Component {
                   type="text"
                   name="subject"
                   placeholder="Are you contacting us on behalf of a company?"
+                  onChange={this.handleChange}
                 />
               </div>
               <div className="details">

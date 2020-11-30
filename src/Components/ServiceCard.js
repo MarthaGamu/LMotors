@@ -59,7 +59,7 @@ const StyledCard = styled.div`
     }
   }
 
-  @media (max-width: 780px) {
+  @media (max-width: 770px) {
     height: 230rem;
     .heading {
       font-size: 1.5rem;

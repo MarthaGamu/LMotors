@@ -1,6 +1,7 @@
 import React from 'react';
 import heroimage from '../images/heroimage.jpg';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const HeroStyling = styled.div`
   .container {
@@ -79,7 +80,10 @@ function HeroBanner() {
           <div className="overlay">
             <div className="content">
               <h1>Vehicle Repairs & Servicing</h1>
-              <button>Get in touch</button>
+              <Link to="/contact">
+                {' '}
+                <button>Get in touch</button>
+              </Link>
             </div>
           </div>
         </div>

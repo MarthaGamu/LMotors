@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLinks } from '../data/menuItems';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-
+import Logo from '../images/Logo.png';
 const NavStyling = styled.div`
   width: 100vw;
   height: 6rem;
@@ -63,7 +63,7 @@ const NavStyling = styled.div`
     position: absolute;
     z-index: 1;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     ul {
       list-style: none;
       a {
@@ -75,6 +75,12 @@ const NavStyling = styled.div`
       li {
         padding: 2rem;
       }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .mobileLink {
+      display: none;
     }
   }
 `;
@@ -90,28 +96,36 @@ function Navbar() {
   return (
     <NavStyling>
       <div className="desktopLink">
-        <div className="logo">LMOTORS</div>
+        <div className="logo">
+          <Link to="/">
+            {' '}
+            <img src={Logo} alt="logo" />
+          </Link>
+        </div>
         <div className="menuLink">
           <ul>{menuItems}</ul>
-          <button className="book">Book Appointment</button>
         </div>
       </div>
       <div className="mobileLink">
-        <div className="logo">LMOTORS</div>
+        <div className="logo">
+          <Link to="/">
+            <img src={Logo} alt="logo" />
+          </Link>
+        </div>
         <div className="hamburger">
           <span onClick={() => setOpen(!open)}>
-            {open == true ? (
+            {open === true ? (
               <>
-                <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+                <i className="fa fa-times fa-2x" aria-hidden="true"></i>
               </>
             ) : (
-              <i class="fas fa fa-bars"></i>
+              <i className="fas fa fa-bars"></i>
             )}
           </span>
         </div>
       </div>
       {open === true ? (
-        <div className="links">
+        <div className="links" onClick={() => setOpen(!open)}>
           <ul>{menuItems}</ul>
         </div>
       ) : (
